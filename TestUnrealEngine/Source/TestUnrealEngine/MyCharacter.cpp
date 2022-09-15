@@ -24,7 +24,7 @@ AMyCharacter::AMyCharacter()
 	GetMesh()->SetRelativeLocationAndRotation(
 		FVector(0.f, 0.f, -88.f), FRotator(0.f, -90.f, 0.f));
 
-	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK(TEXT("SkeletalMesh'/Game/ParagonCountess/Characters/Heroes/Countess/Meshes/SM_Countess.SM_Countess'"));
+	static ConstructorHelpers::FObjectFinder<USkeletalMesh> SK(TEXT("SkeletalMesh'/Game/ParagonCountess/Characters/Heroes/Countess/Skins/Tier2/Shogun/Meshes/SM_Countess_Shogun.SM_Countess_Shogun'"));
 
 	if (SK.Succeeded())
 	{
