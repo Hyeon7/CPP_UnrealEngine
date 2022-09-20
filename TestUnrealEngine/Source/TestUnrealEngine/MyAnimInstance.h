@@ -13,8 +13,10 @@ UCLASS()
 class TESTUNREALENGINE_API UMyAnimInstance : public UAnimInstance
 {
 	GENERATED_BODY()
+	
+	virtual void NativeUpdateAnimation(float DeltaSecond) override;
 
 protected:
-	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Pawn", Meta= (AllowPrivateAccess="true"))
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category="Pawn", Meta=(AllowPrivateAccess="true"))
 	float Speed;
 };
